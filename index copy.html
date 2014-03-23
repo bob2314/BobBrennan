@@ -12,14 +12,11 @@
     <link rel="stylesheet" href="css/flexslider.css"/>
     <link rel="shortcut icon" href="images/favicon.ico">
     
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/modernizr.custom.js"></script>
-    
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+    		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
     <!-- Carousel -->
     <script type="text/javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
@@ -40,7 +37,7 @@
     <script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery.colorbox.js"></script>
-    <!--<script type="text/javascript" src="js/isotope.js"></script>-->
+    <script type="text/javascript" src="js/isotope.js"></script>
 
 
     <!-- Google map -->
@@ -150,7 +147,7 @@
 		<br>Versatile problem solver with experience across a variety of industries: <br><span style="color: #ef4a4a;">Engineering, Wireless, Infrared, Entertainment</span>.</p><br>
 	    <br>
 	    <br>
-	    <div class="one_half">
+	    <div class="one_third">
 		<h3 class="black mb">Skills</h3>
 		<div class="meter">
 		    <div style="width:75%">
@@ -168,7 +165,7 @@
 		    </div>
 		</div>
 	    </div>
-	    <div class="one_half last">
+	    <div class="two_fourth last">
 		<h3 class="black mb">It's me</h3>
 		<!--Team 1-->
 		<div class="team">
@@ -194,7 +191,7 @@
 	    </div>
 	</div>
     </div>
-    <!--/About Us-->
+	<!--/About Us-->
 
 
 
@@ -208,12 +205,40 @@
 	<!-- Portfolio
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<div id="portfolio">
-	    <ul id="og-grid" class="og-grid">
-		<li>
-		    <a href="http://www.americanidol.com/" rel="ext" data-largesrc="images/portfolio/6-idol-400x400.jpg"
+	    
+	    <!-- Portfolio Filters, bitch!
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	    <div class="projects-filters">
+		<!-- Container-->
+		<div class="container clearfix">
+		    <h1 class="white left">Portfolio</h1>
+		    <!-- Filters-->
+		    <div id="filters">
+			<nav class="primary">
+			    <ul>
+			    <li><a href="" class="selected" data-filter="*">All Projects</a></li>
+			    <li><a href="" data-filter=".cat1">Web Design</a></li>
+			    <li><a href="" data-filter=".cat2">Engineering</a></li>
+			    <li><a href="" data-filter=".cat3">Branding</a></li>
+			    </ul>
+			</nav>
+		    </div>
+		    <!--/Filters-->
+		</div>
+		<!--/Container-->
+	    </div>
+	    <!--/Portfolio Filters
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+	    <!-- Portfolio List
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	    <!--<ul class="portfolio">-->
+		<ul id="og-grid" class="og-grid">
+		    <li>
+		    <a href="#" data-largesrc="images/portfolio/6-idol-400x400.jpg"
 		       data-title="American Idol / FOX"
-		       data-description="Managed a team of elite web developers (Frontend & Backend) to redesign <b>FOX</b>'s Season 13 <b>American Idol</b> website"
-		       target="_blank">
+		       data-description="">
 			<img src="images/portfolio/6-thumb250.jpg" alt="img01"/>
 			<!--    <div class="maskme">-->
 			<!--	<h5>Dev Team Lead<br>Web Redesign @ Fox</h5>-->
@@ -221,115 +246,196 @@
 			<!--    </div>-->
 		    </a>
 		</li>
-		<li>
-		    <a href="http://www.fox.com/cory-59180534/" data-largesrc="images/portfolio/13-cory-400x400.jpg"
-		       data-title="GLEE / Cory Memorial"
-		       data-description="Light a Candle memorial site for Glee's <b>Cory Monteith</b> at <b>20th Century FOX</b>">
-			<img src="images/portfolio/13-cory-250x250.jpg" alt="Cory Memorial"/>
-		    </a>
+		    
+		    
+		<!--	American Idol	-->
+		<li class="view cat3 cat1">
+		    <div class="view">
+			<a class="group1" href="partials/project-idol.html" title="Portfolio - FOX American Idol"
+			    data-largesrc="images/portfolio/6-idol-400x400.jpg"
+			    data-title="American Idol / FOX"
+			    data-description="New site redesign for Season 13 of American Idol on FOX.">
+			    <img src="images/portfolio/6-portfolio-thumb.jpg" alt="Portfolio - FOX American Idol" />
+			    <div class="mask">
+				<h5>Dev Team Lead<br>Web Redesign @ Fox</h5>
+				<h4>Team Dev Lead / Web design</h4>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Cars / Disney	    -->
-		    <a href="http://www.disney.go.com/"
-		       data-largesrc="images/portfolio/16-disney-collection-400x400.jpg"
-		       data-title="Legacy Disney Sites"
-		       data-description="Web Development for many, many <strong>Legacy Disney</strong> websites.  Updates & modifications to code written by internal & external developers -- Needed to quickly determine how code functions looking at a million code styles and just as many frameworks!
-		        --- JavaScript, HTML5, CSS, Flash, Ruby, WordPress">
-			<img src="images/portfolio/16-disney-collection-250x250.jpg" alt="img02"/>
-		    </a>
+		<!--	Legacy Disney.go.com	-->
+		<li class="view cat1 cat3">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio - Disney Legacy Sites"
+			    data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna">
+			    <img src="images/portfolio/3-portfolio-thumb.jpg"  alt="Portfolio - Disney Legacy Sites" />
+			    <div class="mask">
+				<h5>Various - Disney.go.com<br>Legacy Site Maintenance</h5>
+				<p>Web Design</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Disney Blogs		    -->
-		    <a href="http://blogs.disney.com/insider/" data-largesrc="images/portfolio/14-blogs-400x400.jpg"
-			data-title="Disney Blogs"
-			data-description="Responsive design of a Pintrest style grid for the Disney Insider blog page (blogs.disney.com/insider).   Also developed an HTML Disney Newsletter template which gets populated with blogs site content and emailed to subscribers.">
-			<img src="images/portfolio/5-thumb250.jpg" alt="Blogs.Disney.com"/>
-		    </a>
+		<!--	Disney	-->
+		<li class="view cat2 cat3">
+		    <div class="view">
+			<a class="group1" href="partials/project-disney.html" title="Portfolio - Disney"
+			    data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/5-portfolio-thumb.jpg"  alt="Portfolio - Disney" />
+			    <div class="mask">
+				<h5>Web Applications Engineer</h5>
+				<p>Web Design</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Disney - Monster's University	    -->
-		    <a href="http://monstersuniversity.com/edu/" data-largesrc="images/portfolio/15-monsters-university400x400.jpg"
-		       data-title="Monster's University"
-		       data-description="Site Analytics, page & link tracking, DoubleClick DPF Ads.  Site staging & delployment, source control, & worked w/ vendor to restructure code for enterprise level deployment & CDN utilization.">
-			<!--<img src="images/portfolio/4-thumb250.jpg" alt="img03"/>-->
-			<img src="images/portfolio/8-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	Out My Window	-->
+		<li class="view cat3">
+		    <div class="view">
+			<a class="group1" href="partials/project-omw.html" title="Portfolio - Out My Window"
+			   data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/4-portfolio-thumb.jpg"  alt="Portfolio - Out My Window" />
+			    <div class="mask">
+				<h5>Smart TV app</h5>
+				<p>Web / Smart TV</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Trouble with the Curve	    -->
-		    <a href="http://www.facebook.com/TroubleWithTheCurve/app_441834125861834" data-largesrc="images/portfolio/9-twtc-400x400.jpg"
-		       data-title="Trouble with the Curve"
-		       data-description="Facebook App to promote the movie release of, 'Trouble with the Curve'.
-		       The app created an electronic E-vite invitation allowing the user to generate a Facebook Share post containing a custom message and a movie promo image selected from a gallery, which could also be sent as an HTML email or .ICS calendar file link.">
-			<img src="images/portfolio/9-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	SM-2 Software	-->
+		<li class=" view cat1 cat2">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			   data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/1-portfolio-thumb.jpg"  alt="" />
+			    <div class="mask">
+				<h5>SM-2 Electronics Automation</h5>
+				<p>Software / Engineering</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	SM-2	    -->
-		    <a href="#" data-largesrc="images/portfolio/7-portfolio-thumb.jpg"
-		       data-title="SM-2 Missile Test SW"
-		       data-description="Developed HW & SW electronics control & interface to automate the electro-optical testing for the Infrared sensor portion of the US Navy's Standard Missile Block II-B missile for RVS, Raytheon Missile Systems.  Led to a $5,000,000 annual sales contract.">
-			<img src="images/portfolio/7-thumb250.jpg" alt="SM-2"/>
-		    </a>
+		<!--	SM-2 Missile	-->
+		<li class="view cat2 cat3">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			   data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/7-portfolio-thumb.jpg" alt="" />
+			    <div class="mask">
+				<h5>Analysis Software</h5>
+				<p>Software / Engineering</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Boingo	    -->
-		    <a href="#" data-largesrc="images/portfolio/2-portfolio-thumb.jpg"
-		       data-title="Boingo Wireless"
-		       data-description="Various airport site layouts, updates, & lots of Omniture (Test & Target) campaigns">
-			<img src="images/portfolio/2-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	Boingo	-->
+		<li class=" view cat1">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/2-portfolio-thumb.jpg" alt="" />
+			    <div class="mask">
+				<h5>Various site layouts</h5>
+				<p>Web Development</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Ouy My Window	    -->
-		    <a href="#" data-largesrc="images/portfolio/4-omw-400x400.jpg"
-		       data-title="Dandelion horseradish"
-		       data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-			    <!--<img src="images/portfolio/8-thumb250.jpg" alt="img03"/>-->
-			    <img src="images/portfolio/4-omw-250x250.jpg" alt="img03"/>
-		    </a>
+		<!--	Disney Monster's University	-->
+		<li class=" view cat1">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			   data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/8-portfolio-thumb.jpg"  alt="" />
+			    <div class="mask">
+				<h5>Disney Movie Website</h5>
+				<p>Website</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	Focal Plane Array Test	    -->
-		    <a href="#" data-largesrc="images/portfolio/1-fpatest-400x400.jpg"
-		       data-title="FPA Test Software"
-		       data-description="Designed the test characterization adn analysis software for an Infrared camera design lab.  'Crunches the numbers' for many standard calculations: NUC, Bad Pixels, NEI & NETD.  Supported TEC & LN2 cooled devices, InSb, InGaAs, MCT.">
-			    <img src="images/portfolio/1-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	Trouble With the Curve	-->
+		<li class="view cat2 cat3">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/9-portfolio-thumb.jpg" alt=""  />
+			    <div class="mask">
+				<h5>Facebook App - Movie Release<br>Warner Brothers</h5>
+				<p>Movie / Facebook App</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		    <!--	SWIR IrInsight	    -->
-		    <a href="http://www.teledyne-si.com/" data-largesrc="images/portfolio/12-ircat-400x400.jpg"
-		       data-title="SWIR Infrared Cameras"
-		       data-description="Designed the camera control software for a series of Infrared (IR) cameras.  Real-time 2pt NUC, Non-Uniformity pixel correction, embedded Xilinx FPGA, with custom USB control register, TEC cooled/stabilized. InGaAs (Indium Gallium Arsenide) focal plane arrays.">
-			    <img src="images/portfolio/10-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	SWIR Camera	-->
+		<li class="view cat3 cat1">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/10-portfolio-thumb.jpg"  alt="" />
+			    <div class="mask">
+				<h5>SWIR - Short Wave IR Camera Design
+				    Thermo-Electric Cooled<br>
+				    0.9&#956;m - 1.7&#956;m - Indigo ROIC
+				</h5><br>
+				<p>Software / Engineering</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>
-		<!--	MWIR	    -->
-		    <a href="http://www.teledyne-si.com/imaging/HMIR.html" data-largesrc="images/portfolio/11-portfolio-thumb.jpg"
-		       data-title="Mid-Wave IR"
-		       data-description="Test software characterization for PV-MCT, Mid-wave IR cameras 3 - 5um nominal.">
-			    <img src="images/portfolio/11-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	MWIR Camera	-->
+		<li class="view cat3 cat2">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/11-portfolio-thumb.jpg"  alt="" />
+			    <div class="mask">
+				<h5>(MWIR) Mid-Wave IR Camera<br>
+				    LN2 Cooled PhotoVoltaic MCT
+				</h5>
+				<p>Software / Engineering</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<li>	
-		    <a href="#" data-largesrc="images/portfolio/12-portfolio-thumb.jpg"
-		       data-title="Dandelion horseradish"
-		       data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-			    <img src="images/portfolio/12-thumb250.jpg" alt="img03"/>
-		    </a>
+		<!--	LWIR Camera	-->
+		<li class="view cat1 cat3">
+		    <div class="view">
+			<a class="group1" href="partials/project.html" title="Portfolio"
+			data-largesrc="images/portfolio/3-portfolio-thumb.jpg"
+			    data-title="Veggies sunt bona vobis"
+			    data-description="Komatsuna ">
+			    <img src="images/portfolio/12-portfolio-thumb.jpg"  alt="" />
+			    <div class="mask">
+				<h5>LWIR - Long Wave IR Camera Design
+				    Thermo-Electric Cooled<br>
+				    0.9&#956;m - 1.7&#956;m 
+				</h5>
+				<p>Software / Engineering</p>
+			    </div>
+			</a>
+		    </div>
 		</li>
-		<!--<li>	-->
-		<!--    <a href="#" data-largesrc="images/portfolio/empty420x420.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">-->
-		<!--	<img src="images/portfolio/empty250x250.jpg" alt="img03"/>-->
-		<!--    </a>-->
-		<!--</li>-->
-		<!--<li>	-->
-		<!--    <a href="#" data-largesrc="images/portfolio/empty420x420.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">-->
-		<!--	<img src="images/portfolio/empty250x250.jpg" alt="img03"/>-->
-		<!--    </a>-->
-		<!--</li>-->
 	    </ul>
 	    <!--/Portfolio List
 	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->

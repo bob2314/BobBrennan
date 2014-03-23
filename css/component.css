@@ -4,14 +4,15 @@
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
+	background-color: #0B0404;
 }
 
 .og-grid li {
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	/*height: 250px;*/
-	height: 342px;
+	height: 250px;
+	/*height: 342px;*/
 }
 
 .og-grid li > a,
@@ -89,7 +90,8 @@
 
 .og-fullimg,
 .og-details {
-	width: 50%;
+	/*width: 50%;*/
+	width: 46%;
 	float: left;
 	height: 100%;
 	overflow: hidden;
