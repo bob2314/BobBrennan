@@ -106,14 +106,14 @@ $(document).ready(function(){
 $(window).load(function() {
 
     var $container = $('.portfolio');
-    //$container.isotope({
-    //    filter: '*',
-    //    animationOptions: {
-    //        duration: 550,
-    //        easing: 'linear',
-    //        queue: false,
-    //    }
-    //});
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 550,
+            easing: 'linear',
+            queue: false,
+        }
+    });
 
     $('nav.primary ul a').click(function() {
         var selector = $(this).attr('data-filter');
@@ -194,7 +194,7 @@ function initialize() {
         position: companyPos,
         map: map,
         icon: companyImage,
-        title: "Eleven Media",
+        title: "Brennan",
         zIndex: 3
     });
 
@@ -254,27 +254,27 @@ $(document).ready(function() {
 /*===========================================================*/
 $(function() {
     //	Scrolled by user interaction
-    $('#news-carousel').carouFredSel({
-        auto: false,
-        width: '100%',
-        prev: {
-            button: "#prev2",
-            key: "left",
-            items: 1,
-            duration: 750
-        },
-        next: {
-            button: "#next2",
-            key: "right",
-            items: 1,
-            duration: 750
-        },
-        mousewheel: false,
-        swipe: {
-            onMouse: false,
-            onTouch: true
-        }
-    });
+    //$('#news-carousel').carouFredSel({
+    //    auto: false,
+    //    width: '100%',
+    //    prev: {
+    //        button: "#prev2",
+    //        key: "left",
+    //        items: 1,
+    //        duration: 750
+    //    },
+    //    next: {
+    //        button: "#next2",
+    //        key: "right",
+    //        items: 1,
+    //        duration: 750
+    //    },
+    //    mousewheel: false,
+    //    swipe: {
+    //        onMouse: false,
+    //        onTouch: true
+    //    }
+    //});
 
 
     $('#testimonials-carousel').carouFredSel({

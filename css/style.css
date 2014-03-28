@@ -53,20 +53,9 @@
 	}
 
 
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  1. General
-/* ------------------------------------------------------------------------------- */	
-
-
+/* ------------------------------------------------------------------------------- */
 	@font-face {
 		font-family: 'BebasRegular';
 		src: url('font/BEBAS___-webfont.eot');
@@ -159,53 +148,19 @@
                 transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
 	}
 	
-	.one_half {
-    	width: 48%;
-	}
-	
-	.one_third {
-		width: 30.5%;
-	}
-	
-	.one_fourth {
-		width: 22%;
-	}
-	
-	.one_fifth {
-		width: 16.8%;
-	}
-	
-	.one_sixth {
-		width: 13.33%;
-	}
-	
-	.two_fifth {
-		width: 37.6%;
-	}
-	
-	.two_fourth {
-		width: 48%;
-	}	
-	
-	.two_third {
-		width: 65.33%;
-	}
-	
-	.three_fifth {
-		width: 58.4%;
-	}
-	
-	.three_fourth {
-		width: 74%;
-	}
-	
-	.four_fifth {
-		width: 79.2%;
-	}
-	
-	.five_sixth {
-		width: 82.67%;
-	}
+.one_half { width: 48% }
+.one_third { width: 30.5% }
+.one_fourth { width: 22% }
+.one_fifth { width: 16.8% }
+.one_sixth { width: 13.33% }
+.two_fifth { width: 37.6% }
+.two_fourth { width: 48% }
+.two_third { width: 65.33% }
+.three_fifth { width: 58.4% }
+.three_fourth { width: 74% }
+.four_fifth { width: 79.2% }
+.five_sixth { width: 82.67% }
+
 	
 	.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
 		float: left;
@@ -304,37 +259,14 @@
 		position: relative;
 	}
 	
-	.ourteam {
-		background:#ebebeb;
-	}
-	
-	.newsletter {
-		background:#ef4a4a;
-	}
-	
-	.projects-filters {
-		background:#262932;
-	}
-	
-	#news {
-		background:#dddddd;
-	}
-	
-	.twitter {
-		background:#ef4a4a;
-	}
-	
-	.contact-header {
-		background:#fff;
-	}
-	
-	.contact-form {
-		background:#ECECEC;
-	}
-	
-	.footer {
-		background:#262932;
-	}
+.resume { background: #ebebeb }
+.newsletter { background: #ef4a4a }
+.projects-filters { background: #262932 }
+#news { background: #dddddd }
+.twitter { background: #ef4a4a }
+.contact-header { background: #fff }
+.contact-form { background: #ECECEC }
+.footer { background: #262932 }
 
 
 
@@ -1087,12 +1019,6 @@
 
 
 
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  13. News Images Hover Effects
 /* ------------------------------------------------------------------------------- */
@@ -1175,6 +1101,29 @@
 
 
 
+	.og-grid img {	   
+	   display: block;
+	   width: 100%;
+	   height:auto;	   
+	}
+	
+	.og-grid .mask {
+	   opacity: 0;
+	}	
+	
+	.og-grid li:hover .mask {
+	   opacity:1;
+	}	
+
+	.og-grid .mask {
+	   width: 100%;
+	   height:100%;
+	   position: absolute;
+	   overflow: hidden;
+	   top: 0;
+	   left: 0;
+	   background: rgba(239, 74, 74, 1);
+	}
 
 
 
@@ -1514,12 +1463,78 @@
 		opacity:0.3;
 	}
 
+	
+	
 
+/* ------------------------------------------------------------------------------- */
+/*  Buttons
+/* ------------------------------------------------------------------------------- */
 
+.btnResume {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #810e05;
+}
+.btnResume:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+.btnResume:active {
+	position:relative;
+	top:1px;
+}
 
-
-
-
+a.button {
+   display: -moz-inline-stack;
+   display: inline-block;
+   width: 120px;
+   height: 38px;
+   background: url("http://dabuttonfactory.com/b.png?t=Resume&f=Calibri-Bold&ts=24&tc=ffffff00&tshs=1&tshc=22222200&it=png&c=5&bgt=gradient&bgc=ef4a4a&ebgc=ff0000&hp=20&vp=11") no-repeat;
+   line-height: 38px;
+   vertical-align: text-middle;
+   text-align: center;
+   color: #ffffff;
+   font-family: Calibri;
+   font-size: 24px;
+   font-weight: bold;
+   font-style: normal;
+   text-shadow: #222222 1px 1px 0;
+}
+a.button > span {
+   display: -moz-inline-block;
+}
 
 
 
@@ -1543,13 +1558,6 @@
 
 
 
-
-
-
-
-
-
-
 	
 @media only screen and (max-width: 1300px) { 
 
@@ -1567,6 +1575,66 @@
 
 
 
+
+.jumbotron-carousel .btn {
+    margin-top: 22px;
+    font-family: museo-slab,Georgia,"Times New Roman",Times,serif;
+    font-size: 24px;
+    padding: 17px 30px;
+    color: #fff;
+    border-color: #c7e7dc;
+    background-color: transparent;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15)
+}
+
+.jumbotron-carousel .btn:hover {
+    background-color: #f4faf8;
+    border-color: #f4faf8;
+    color: #1d9d74;
+    text-shadow: 0 -1px 0 #fff
+}
+
+.btn:hover, .btn:focus {
+color: #333;
+text-decoration: none;
+}
+
+.btn {
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.btn-lg {
+padding: 10px 16px;
+/* font-size: 18px; */
+line-height: 1.33;
+border-radius: 6px;
+}
+
+.btn-default {
+color: #333;
+background-color: #fff;
+border-color: #ccc;
+}
+
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+white-space: nowrap;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
 
 
 
@@ -1909,52 +1977,19 @@
 		font-weight:bold;
 	}
 	
-	.one_half {
-    	width: 100%;
-	}
-	
-	.one_third {
-		width: 100%;
-	}
-	
-	.one_fourth {
-		width: 100%;
-	}
-	
-	.one_fifth {
-		width: 100%;
-	}
-	
-	.one_sixth {
-		width: 100%;
-	}
-	.two_fifth {
-		width: 100%;
-	}
-	
-	.two_fourth {
-		width: 100%;
-	}	
-	
-	.two_third {
-		width: 100%;
-	}
-	
-	.three_fifth {
-		width: 100%;
-	}
-	
-	.three_fourth {
-		width: 100%;
-	}
-	
-	.four_fifth {
-		width: 100%;
-	}
-	
-	.five_sixth {
-		width: 100%;
-	}
+.one_half { width: 100% }
+.one_third { width: 100% }
+.one_fourth { width: 100% }
+.one_fifth { width: 100% }
+.one_sixth { width: 100% }
+.two_fifth { width: 100% }
+.two_fourth { width: 100% }
+.two_third { width: 100% }
+.three_fifth { width: 100% }
+.three_fourth { width: 100% }
+.four_fifth { width: 100% }
+.five_sixth { width: 100% }
+
 	
 	.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
 		float: left;
@@ -2411,12 +2446,7 @@
 		-moz-background-size: auto;
 		background-size: auto;
 	}
-	
-
 }
-
-
-
 
 
 
