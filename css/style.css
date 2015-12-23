@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* -------------------------------------------------------------------------------
-
     0.  Reset & Clearfix
     1.  General
     2.  Menu
@@ -20,7 +19,8 @@
     16. Contact
 	17. Footer
     18. Media Queries
-	
+	19. Colorbox
+	20. Flexslider
 */
 
 
@@ -216,7 +216,19 @@
 		font-family: 'BebasRegular';
 		font-weight:lighter;
 	}
-	
+	#logo:hover {
+		color: #ef4a4a;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.special-color:hover {
+		color: #ef4a4a;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.slider-color {
+		color: #e7e7e7;
+	}
 	.dot {
 		font-size:45px;
 	}
@@ -362,13 +374,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  5. Home Page
 /* ------------------------------------------------------------------------------- */
@@ -434,7 +439,7 @@
 		margin-right:10%;
 		z-index:20;
 		position:absolute;
-		width:45%;
+		/*width:45%;*/
 		text-align:left;
 	}
 	
@@ -464,17 +469,8 @@
 	}
 
 	
-
-
-
-
-
-
-
-
-	
 /* ------------------------------------------------------------------------------- */
-/*  6. About Us
+/*  6. About
 /* ------------------------------------------------------------------------------- */
 
 	
@@ -561,15 +557,6 @@
 	.team-social img{
 		padding:3px;
 	}
-
-
-
-
-
-
-
-
-
 
 
 /* ------------------------------------------------------------------------------- */
@@ -800,15 +787,6 @@
 	}
 
 
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  10. Portfolio Project page
 /* ------------------------------------------------------------------------------- */	
@@ -841,15 +819,6 @@
 	.categories li a:hover {
 		color: #000;
 	}
-
-
-
-
-
-
-
-
-
 
 
 /* ------------------------------------------------------------------------------- */
@@ -908,15 +877,6 @@
 		opacity:1;
 	}
 	
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------------------- */
 /*  12. News
@@ -1126,10 +1086,6 @@
 	}
 
 
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  14. News Post page
 /* ------------------------------------------------------------------------------- */		
@@ -1232,13 +1188,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  15. Twitter
 /* ------------------------------------------------------------------------------- */	
@@ -1265,18 +1214,9 @@
 	}
 
 
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  16. Contact
 /* ------------------------------------------------------------------------------- */	
-	
 	
 	#map_canvas {
 		width:100%;
@@ -1366,15 +1306,6 @@
 	}
 
 
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  17. Footer
 /* ------------------------------------------------------------------------------- */	
@@ -1462,9 +1393,6 @@
 		color:#fff;
 		opacity:0.3;
 	}
-
-	
-	
 
 /* ------------------------------------------------------------------------------- */
 /*  Buttons
@@ -1692,14 +1620,6 @@ border-color: #ccc;
 		background-size: auto;
 	}
 }	
-
-
-
-
-
-
-
-
 
 
 
@@ -2464,4 +2384,124 @@ border-color: #ccc;
 
 
 
-		
+/* ------------------------------------------------------------------------------- */
+/*  19. Colorbox
+/* ------------------------------------------------------------------------------- */
+
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:visible;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+
+#cboxOverlay{background:#000; }
+#colorbox{ height:auto}
+#cboxContent{margin-top:150px; overflow:visible;}
+.cboxIframe{background:#fff;}
+#cboxError{padding:50px; }
+#cboxLoadedContent{background:none; padding:0px; height:auto!important;}
+#cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center; width:100px; height:100px; background-color:#000; left:50%; margin-left:-50px; top:50%; margin-top:-50px; border-radius:50px;}
+#cboxLoadingOverlay{background:none;}
+#cboxTitle{background: none repeat scroll 0 0 #121212; color:#FFFFFF; height:40px; left: 0; padding: 20px; position: fixed; top: 0; width: 100%; font-size: 30px; font-weight:bold; line-height:40px; font-family: 'helvetica,"Muli",sans-serif' , 'arial';}
+#cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:40px; height:40px; position:absolute; top:-20px; background:url(../images/controls.png) no-repeat 0 0;}
+#cboxPrevious{background:url(../images/left_hover.png) 12px 10px no-repeat #333; right:120px; position:fixed; margin-top:20px;}
+#cboxPrevious:hover{background:url(../images/left_hover.png) 12px 10px no-repeat #555555; }
+#cboxNext{background:url(../images/right_hover.png) 14px 10px no-repeat #333; right:70px; position:fixed; margin-top:20px;}
+#cboxNext:hover{background:url(../images/right_hover.png) 14px 10px no-repeat #555555;}
+#cboxClose{background:url(../images/close_hover.png) no-repeat #333; right:20px; margin-top:20px; position:fixed;}
+#cboxClose:hover{background:url(../images/close_hover.png) no-repeat #555555;}
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+.cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+.cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
+.cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+.cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  20. Flexslider
+/* ------------------------------------------------------------------------------- */
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: block!important; -webkit-backface-visibility:visible!important;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin:0px; display:block;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {background-color:#000}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {height: 0;}
+.flex-direction-nav a {width: 40px; height: 40px; display: block;  position: absolute;  z-index: 10; cursor: pointer; text-indent: -9999px;  -webkit-transition: all .3s ease; margin-top:-80px; opacity:0}
+.flex-direction-nav .flex-next {background: url("../images/right.png") 14px 9px rgba(255, 255, 255, 0.5) no-repeat; left:81px;  }
+.flex-direction-nav .flex-prev {background: url("../images/left.png")  12px 9px rgba(255, 255, 255, 0.5) no-repeat; left:40px; }
+.flexslider:hover .flex-next {background: url("../images/right.png") 14px 9px rgba(255, 255, 255, 1) no-repeat; opacity:0.5; }
+.flexslider:hover .flex-prev {background: url("../images/left.png")  12px 9px rgba(255, 255, 255, 1) no-repeat; opacity:0.5; }
+
+.flexslider .flex-prev:hover, .flexslider .flex-next:hover { opacity:0.7}
+.flex-direction-nav .flex-disabled {opacity: 0.3!important; cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; }
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
