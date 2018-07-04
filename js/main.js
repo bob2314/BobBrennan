@@ -32,6 +32,9 @@ $(document).ready(function() {
 
 });
 
+function initMap(){
+  console.log('google map loaded!');
+}
 
 $(document).ready(function(){
 
