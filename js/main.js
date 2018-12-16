@@ -120,6 +120,8 @@ $(window).load(function() {
 
     $('nav.primary ul a').click(function() {
         var selector = $(this).attr('data-filter');
+        console.log('nav selector clicked: ' + selector);
+
         $container.isotope({
             filter: selector,
             animationOptions: {
@@ -135,7 +137,9 @@ $(window).load(function() {
         $optionLinks = $optionSets.find('a');
 
     $optionLinks.click(function() {
+      console.log('optionLinks clicked: ' + $optionLinks);
         var $this = $(this);
+        console.log('nav.primary ul a -- clicked');
         // don't proceed if already selected
         if ($this.hasClass('selected')) {
             return false;
@@ -154,22 +158,23 @@ $(window).load(function() {
 /*===========================================================*/
 function initialize() {
 
-    var latlng = new google.maps.LatLng(34.0116634, -118.492752);
-    var settings = {
-        zoom: 16,
-        center: latlng,
-        mapTypeControl: false,
-        scrollwheel: false,
-        mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-        },
-        navigationControl: false,
-        navigationControlOptions: {
-            style: google.maps.NavigationControlStyle.SMALL
-        },
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+    // var latlng = new google.maps.LatLng(34.0116634, -118.492752);
+    // var settings = {
+    //     zoom: 16,
+    //     center: latlng,
+    //     mapTypeControl: false,
+    //     scrollwheel: false,
+    //     mapTypeControlOptions: {
+    //         style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    //     },
+    //     navigationControl: false,
+    //     navigationControlOptions: {
+    //         style: google.maps.NavigationControlStyle.SMALL
+    //     },
+    //     mapTypeId: google.maps.MapTypeId.ROADMAP
+    // };
+
+    // var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
 
     var contentString = '<div id="content">' +
         '<div id="siteNotice">' +
@@ -179,33 +184,29 @@ function initialize() {
         '<p>Another sunny day at the beach!</p>' +
         '</div>' +
         '</div>';
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
+    // var infowindow = new google.maps.InfoWindow({
+    //     content: contentString
+    // });
 
-    var companyImage = new google.maps.MarkerImage('images/marker.png',
-        new google.maps.Size(58, 63), //<!-- Width and height of the marker -->
-        new google.maps.Point(0, 0),
-        new google.maps.Point(35, 20) //<!-- Position of the marker -->
-    );
+    // var companyImage = new google.maps.MarkerImage('images/marker.png',
+    //     new google.maps.Size(58, 63), //<!-- Width and height of the marker -->
+    //     new google.maps.Point(0, 0),
+    //     new google.maps.Point(35, 20) //<!-- Position of the marker -->
+    // );
 
+    // var companyPos = new google.maps.LatLng(34.0116634, -118.492752);
 
+    // var companyMarker = new google.maps.Marker({
+    //     position: companyPos,
+    //     map: map,
+    //     icon: companyImage,
+    //     title: "Brennan",
+    //     zIndex: 3
+    // });
 
-    var companyPos = new google.maps.LatLng(34.0116634, -118.492752);
-
-    var companyMarker = new google.maps.Marker({
-        position: companyPos,
-        map: map,
-        icon: companyImage,
-        title: "Brennan",
-        zIndex: 3
-    });
-
-
-
-    google.maps.event.addListener(companyMarker, 'click', function() {
-        infowindow.open(map, companyMarker);
-    });
+    // google.maps.event.addListener(companyMarker, 'click', function() {
+    //     infowindow.open(map, companyMarker);
+    // });
 }
 
 /*===========================================================*/
@@ -224,7 +225,7 @@ function calculateScroll() {
     var rangeTop = 200;
     var rangeBottom = 500;
 
-    $('#navigation').find('a').each(function() {
+    $('#navigation').find('a.intern').each(function() {
         contentTop.push($($(this).attr('href')).offset().top);
         contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
     })
