@@ -49,7 +49,6 @@
     <link rel="stylesheet" href="css/flexslider.css"/>
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="shortcut icon" href="images/favicon.ico">
-
     <!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -82,310 +81,239 @@
 </head>
 
 <body onload="initialize()">
-<!-- Home Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div id="index">
-<!--
-    <a href="" id="arrow_left" name="arrow_left"><img src="images/arrow_left.png" alt="Slide Left"></a> <a href="" id="arrow_right" name="arrow_right"><img src="images/arrow_right.png" alt="Slide Right"></a> <img id="cycle-loader" src="images/loading.gif" alt="" name="cycle-loader">
-    -->
-    <!-- Full Screen Slider
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!--
-    <div id="maximage" class="clearfix">
-        <div>
-            <img src="images/slider/slider1.jpg" alt="">
-            <div class="pattern"></div>
-            <div class="in-slide-content" style="display:none;">
-                <h1>Bob Brennan</h1>
-    -->
 
-                <!-- <h2 class='slider-color'>Versatile Web Engineer</h2> -->
-      <!--      </div>
-        </div>
-        <div>
-            <img src="images/slider/slider6.jpg" alt="">
-            <div class="pattern"></div>
-            <div class="in-slide-content" style="display:none;">
-                <h1>Portfolio   </h1>
-                <h2 class='slider-color'>Web Projects</h2>
-            </div>
-        </div>
-    </div>
--->
-</div>
-<!--/Home Page -->
+  <div id="index"></div>
 
-<!-- Navigation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<nav id="navigation">
-      <a href="#index">
-    <!-- <a href="index.html"> -->
-        <h2 id="logo">Brennan<span class="color dot">.</span></h2>
-        <h4 id="logo" class="minilogo">Engineer<span class="color dot">.</span>
-          Web<span class="color dot">.</span>
-          Embedded<span class="color dot">.</span>
-        </h3>
+  <nav id="navigation">
+    <a href="#index">
+      <h2 id="logo">Brennan<span class="color dot">.</span></h2>
+      <h4 id="logo" class="minilogo">Engineer<span class="color dot">.</span>
+        Web<span class="color dot">.</span>
+        Embedded<span class="color dot">.</span>
+      </h4>
     </a>
     <ul id="menu">
-        <li class="current"><a class="intern" href="#index">Home</a></li>
-        <li><a class="intern" href="#aboutus">About</a></li>
-        <li><a class="intern" href="#portfolio">Portfolio</a></li>
-        <li><a class="intern" href="#resume">Resume</a></li>
-        <li><a class="intern" href="#contact">Contact</a></li>
+      <li class="current"><a class="intern" href="#index">Home</a></li>
+      <!-- <li><a class="intern" href="#portfolio">Portfolio</a></li> -->
+      <li><a class="intern" href="#resume">Resume</a></li>
+      <li><a class="intern" href="#links">Links</a></li>
+      <!-- <li><a class="intern" href="#aboutus">About</a></li> -->
     </ul>
-</nav>
-<!--/Navigation-->
+  </nav>
 
-
-<!-- Separator1-->
-<div id="separator11">
-  <div class="pattern"></div>
-  <div class="separator1-bg"></div>
-</div>
-<!--/Separator1-->
-
-<!-- Portfolio
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div id="portfolio">
+  <div id="separator11">
+    <div class="pattern"></div>
+    <div class="separator1-bg"></div>
+  </div>
+  <!-- Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <div id="portfolio">
     <ul id="og-grid" class="og-grid">
+    <!--  American Idol ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.americanidol.com/" rel="ext" data-largesrc="images/portfolio/6-idol-page-400x400.jpg"
+          data-title="American Idol / FOX"
+          data-description="Managed a team of elite web developers (Frontend & Backend) to redesign <b>FOX</b>'s Season 13 <b>American Idol</b> website">
+          <img src="images/portfolio/6-thumb250.jpg" alt="American Idol image"/>
+          <div class="mask">
+            <h5>Development Team Lead</h5>
+            <p>Website Redesign</p>
+          </div>
+        </a>
+      </li>
+      <!--  Disney Blogs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://blogs.disney.com/insider/" data-largesrc="images/portfolio/14-blogs-400x400.jpg"
+          data-title="Disney Blogs"
+          data-description="Responsive design of a Pintrest style grid for the Disney Insider blog page (blogs.disney.com/insider).   Also developed an HTML Disney Newsletter template which gets populated with blogs site content and emailed to subscribers.">
+          <img src="images/portfolio/5-thumb250.jpg" alt="Blogs.Disney.com"/>
+          <div class="mask">
+            <h5>Disney Blogs Site</h5>
+            <p>Web / WordPress</p>
+          </div>
+        </a>
+      </li>
+      <!--  Disney - Monsters University ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://monstersuniversity.com/edu/" data-largesrc="images/portfolio/15-monsters-university400x400.jpg"
+          data-title="Monster's University"
+          data-description="Site Analytics, page & link tracking, DoubleClick DPF Ads.  Site staging & delployment, source control, & worked w/ vendor to restructure code for enterprise level deployment & CDN utilization.">
+          <img src="images/portfolio/8-thumb250.jpg" alt="Monsters University"/>
+          <div class="mask">
+            <h5>Web Applications Engineer</h5>
+            <p>Web Design</p>
+          </div>
+        </a>
+      </li>
+      <!--  Disney Sites - Collection  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.disney.go.com/"
+            data-largesrc="images/portfolio/16-disney-collection-400x400.jpg"
+            data-title="Legacy Disney Sites"
+            data-description="Web Development for many, many <strong>Legacy Disney</strong> websites.  Updates & modifications to code written by internal & external developers -- Needed to quickly determine how code functions looking at a million code styles and just as many frameworks!
+                  --- JavaScript, HTML5, CSS, Flash, Ruby, WordPress">
+          <img src="images/portfolio/16-disney-collection-250x250.jpg" alt="Disney Image"/>
+          <div class="mask">
+            <h5>Web Development</h5>
+            <p>Disney</p>
+          </div>
+        </a>
+      </li>
+      <!--  RED Interactive ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.samsung.com/us/837/" rel="ext" data-largesrc="images/portfolio/18-red-samsung-400x400.jpg"
+          data-title="Samsung Smart Home API"
+          data-description="Technical Lead & Backend Engineer | API for <b>Samsung</b>'s s837 <b>Smart Home</b> display store in NYC">
+          <img src="images/portfolio/18-red-logo-250x250.jpg" alt="samimg01"/>
+          <div class="mask">
+            <h5>Technical Lead<br>Smart Home Devices - API Development & Integration</h5>
+            <p>Python | React JS | Docker</p>
+            <p>Android | AWS</p>
+          </div>
+        </a>
+      </li>
+      <!--  Beachbody  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.beachbody.com/" rel="ext" data-largesrc="images/portfolio/BOD-400x400.jpg"
+          data-title="Beachbody.com"
+          data-description="<ul><li>Streaming Video - NodeJS & ReactJS</li><li>AWS Lambda APIs</li><li>NodeJS</li></ul>">
+          <img src="images/portfolio/beachbody-250x250.jpg" alt="Beachbody image"/>
+          <div class="mask">
+            <h5>Beachbody</h5>
+            <p>Fullstack Engineering (NodeJS, ReactJS, Java)</p>
+          </div>
+        </a>
+      </li>
+      <!--  Saatchi Art ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.saatchiart.com/" rel="ext" data-largesrc="images/portfolio/17-saatchi-page.jpg"
+          data-title="Saatchi Art"
+          data-description="Feature enhancement of the site's eCommerce & checkout system <br> Web analytics implementation(s): Google Tag Manager, Google Analytics, AdWords <br> Created Google Shopping / Merchant Center (& other affiliates) product feeds">
+          <img src="images/portfolio/17-saatchi-logo.jpg" alt="Saatchi Art image"/>
+          <div class="mask">
+            <h5>Saatchi Art</h5>
+            <p>eCommerce (PHP, JS, Anayltics)</p>
+          </div>
+        </a>
+      </li>
+      <!--  FOX Cory / Glee ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.fox.com/cory-59180534/" data-largesrc="images/portfolio/13-cory-400x400.jpg"
+          data-title="GLEE / Cory Memorial"
+          data-description="Light a Candle memorial site for Glee's <b>Cory Monteith</b> at <b>20th Century FOX</b>">
+          <img src="images/portfolio/13-cory-250x250.jpg" alt="Cory Memorial"/>
+          <div class="mask">
+            <h5>Web Design - FOX.com</h5>
+            <p>Team Dev Lead / Web design</p>
+          </div>
+        </a>
+      </li>
+      <!--  Trouble with the Curve ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.facebook.com/TroubleWithTheCurve/app_441834125861834" data-largesrc="images/portfolio/9-twtc-400x400.jpg"
+          data-title="Trouble with the Curve"
+          data-description="Facebook App to promote the movie release of, 'Trouble with the Curve'.
+                The app created an electronic E-vite invitation allowing the user to generate a Facebook Share post containing a custom message and a movie promo image selected from a gallery, which could also be sent as an HTML email or .ICS calendar file link.">
+          <img src="images/portfolio/9-thumb250.jpg" alt="Facebook app image"/>
+          <div class="mask">
+            <h5>Facebook App</h5>
+            <p>Web Design</p>
+          </div>
+        </a>
+      </li>
+      <!--  Boingo  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="#" data-largesrc="images/portfolio/2-portfolio-thumb.jpg"
+            data-title="Boingo Wireless"
+            data-description="Various airport site layouts, updates, & lots of Omniture (Test & Target) campaigns">
+          <img src="images/portfolio/2-thumb250.jpg" alt="Boingo Image"/>
+          <div class="mask">
+            <h5>Various site layouts</h5>
+            <p>Web Development</p>
+          </div>
+        </a>
+      </li>
+      <!--  Ouy My Window ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="#" data-largesrc="images/portfolio/4-omw-400x400.jpg"
+            data-title="Out My Window"
+            data-description="Smart TV Social Media <br>image sharing app for Warner Brothers">
+          <img src="images/portfolio/4-omw-250x250.jpg" alt="Out My Window image"/>
+          <div class="mask">
+            <h5>Smart TV app</h5>
+            <p>Web / Smart TV</p>
+          </div>
+        </a>
+      </li>
+      <!--  SM-2  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="#" data-largesrc="images/portfolio/7-portfolio-thumb.jpg"
+          data-title="SM-2 Missile Test SW"
+          data-description="Developed HW & SW electronics control & interface to automate the electro-optical testing for the Infrared sensor portion of the US Navy's Standard Missile Block II-B missile for RVS, Raytheon Missile Systems.  Led to a $5,000,000 annual sales contract.">
+          <img src="images/portfolio/7-thumb250.jpg" alt="SM-2 image"/>
+          <div class="mask">
+            <h5>Analysis Software</h5>
+            <p>Software / Engineering</p>
+          </div>
+        </a>
+      </li>
+      <!--  Focal Plane Array Test ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="#" data-largesrc="images/portfolio/1-fpatest-400x400.jpg"
+          data-title="FPA Testing"
+          data-description="Designed the test characterization adn analysis software for an Infrared camera design lab.  'Crunches the numbers' for many standard calculations: NUC, Bad Pixels, NEI & NETD.  Supported TEC & LN2 cooled devices, InSb, InGaAs, MCT.">
+          <img src="images/portfolio/1-thumb250.jpg" alt="FPA Test image"/>
+          <div class="mask">
+            <h5>Camera Analysis Software</h5>
+            <p>Software / Engineering</p>
+          </div>
+        </a>
+      </li>
+      <!--  SWIR IrInsight  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.teledyne-si.com/products-and-services/imaging-sensors/infrared-and-visible-fpas" data-largesrc="images/portfolio/12-ircat-400x400.jpg"
+          data-title="SWIR Infrared Cameras"
+          data-description="Designed the camera control software for a series of Infrared (IR) cameras.  Real-time 2pt NUC, Non-Uniformity pixel correction, embedded Xilinx FPGA, with custom USB control register, TEC cooled/stabilized. InGaAs (Indium Gallium Arsenide) focal plane arrays.">
+          <img src="images/portfolio/10-thumb250.jpg" alt="SWIR Infrared Cameras Image"/>
+          <div class="mask">
+            <h5>SWIR - Short Wave IR Camera Design
+              Thermo-Electric Cooled<br>
+              0.9&#956;m - 1.7&#956;m - Indigo ROIC
+            </h5><br>
+            <p>Software / Engineering</p>
+          </div>
+        </a>
+      </li>
+      <!--  MWIR  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <li>
+        <a href="https://www.teledyne-si.com/products-and-services/imaging-sensors/hmir" data-largesrc="images/portfolio/11-portfolio-thumb.jpg"
+          data-title="Mid-Wave IR"
+          data-description="Test software characterization for PV-MCT, Mid-wave IR cameras 3 - 5um nominal.">
+          <img src="images/portfolio/11-thumb250.jpg" alt="img03"/>
+          <div class="mask">
+            <h5>(MWIR) Mid-Wave IR Camera<br>
+              LN2 Cooled PhotoVoltaic MCT
+            </h5>
+            <p>Software / Engineering</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" data-largesrc="images/portfolio/12-portfolio-thumb.jpg"
+          data-title="Mid-Wave IR Camera"
+          data-description="LN2 Cooled PhotoVoltaic MCT Imager">
+          <img src="images/portfolio/12-thumb250.jpg" alt="Mid-Wave IR Camera"/>
+          <div class="mask">
+            <h5>(MWIR) Mid-Wave IR Camera<br>
+              LN2 Cooled PhotoVoltaic MCT
+            </h5>
+            <p>Software / Engineering</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-  <!--  RED Interactive
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.samsung.com/us/837/" rel="ext" data-largesrc="images/portfolio/18-red-samsung-400x400.jpg"
-         data-title="Samsung Smart Home API"
-         data-description="Technical Lead & Backend Engineer | API for <b>Samsung</b>'s s837 <b>Smart Home</b> display store in NYC">
-        <img src="images/portfolio/18-red-logo-250x250.jpg" alt="samimg01"/>
-        <div class="mask">
-          <h5>Technical Lead<br>Smart Home Devices - API Development & Integration</h5>
-          <p>Python | React JS | Docker</p>
-          <p>Android | AWS</p>
-        </div>
-      </a>
-    </li>
-
-  <!--  American Idol
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.americanidol.com/" rel="ext" data-largesrc="images/portfolio/6-idol-page-400x400.jpg"
-         data-title="American Idol / FOX"
-         data-description="Managed a team of elite web developers (Frontend & Backend) to redesign <b>FOX</b>'s Season 13 <b>American Idol</b> website">
-        <img src="images/portfolio/6-thumb250.jpg" alt="American Idol image"/>
-        <div class="mask">
-          <h5>Dev Team Lead<br>Web Redesign @ Fox</h5>
-          <p>Team Dev Lead / Web design</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Disney Sites - Collection
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.disney.go.com/"
-         data-largesrc="images/portfolio/16-disney-collection-400x400.jpg"
-         data-title="Legacy Disney Sites"
-         data-description="Web Development for many, many <strong>Legacy Disney</strong> websites.  Updates & modifications to code written by internal & external developers -- Needed to quickly determine how code functions looking at a million code styles and just as many frameworks!
-                --- JavaScript, HTML5, CSS, Flash, Ruby, WordPress">
-        <img src="images/portfolio/16-disney-collection-250x250.jpg" alt="Disney Image"/>
-        <div class="mask">
-          <h5>Web Development</h5>
-          <p>Disney</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Disney Blogs
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://blogs.disney.com/insider/" data-largesrc="images/portfolio/14-blogs-400x400.jpg"
-         data-title="Disney Blogs"
-         data-description="Responsive design of a Pintrest style grid for the Disney Insider blog page (blogs.disney.com/insider).   Also developed an HTML Disney Newsletter template which gets populated with blogs site content and emailed to subscribers.">
-        <img src="images/portfolio/5-thumb250.jpg" alt="Blogs.Disney.com"/>
-        <div class="mask">
-          <h5>Disney Blogs Site</h5>
-          <p>Web / WordPress</p>
-        </div>
-      </a>
-    </li>
-    <!--  Disney - Monsters University
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://monstersuniversity.com/edu/" data-largesrc="images/portfolio/15-monsters-university400x400.jpg"
-         data-title="Monster's University"
-         data-description="Site Analytics, page & link tracking, DoubleClick DPF Ads.  Site staging & delployment, source control, & worked w/ vendor to restructure code for enterprise level deployment & CDN utilization.">
-        <img src="images/portfolio/8-thumb250.jpg" alt="Monsters University"/>
-        <div class="mask">
-          <h5>Web Applications Engineer</h5>
-          <p>Web Design</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Beachbody
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.beachbody.com/" rel="ext" data-largesrc="images/portfolio/BOD-400x400.jpg"
-         data-title="Beachbody.com"
-         data-description="<ul><li>Streaming Video - NodeJS & ReactJS</li><li>AWS Lambda APIs</li><li>NodeJS</li></ul>">
-        <img src="images/portfolio/beachbody-250x250.jpg" alt="Beachbody image"/>
-        <div class="mask">
-          <h5>Beachbody</h5>
-          <p>Fullstack Engineering (NodeJS, ReactJS, Java)</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Saatchi Art
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.saatchiart.com/" rel="ext" data-largesrc="images/portfolio/17-saatchi-page.jpg"
-         data-title="Saatchi Art"
-         data-description="Feature enhancement of the site's eCommerce & checkout system <br> Web analytics implementation(s): Google Tag Manager, Google Analytics, AdWords <br> Created Google Shopping / Merchant Center (& other affiliates) product feeds">
-        <img src="images/portfolio/17-saatchi-logo.jpg" alt="Saatchi Art image"/>
-        <div class="mask">
-          <h5>Saatchi Art</h5>
-          <p>eCommerce (PHP, JS, Anayltics)</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  FOX Cory / Glee
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.fox.com/cory-59180534/" data-largesrc="images/portfolio/13-cory-400x400.jpg"
-         data-title="GLEE / Cory Memorial"
-         data-description="Light a Candle memorial site for Glee's <b>Cory Monteith</b> at <b>20th Century FOX</b>">
-        <img src="images/portfolio/13-cory-250x250.jpg" alt="Cory Memorial"/>
-        <div class="mask">
-          <h5>Web Design - FOX.com</h5>
-          <p>Team Dev Lead / Web design</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Trouble with the Curve
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.facebook.com/TroubleWithTheCurve/app_441834125861834" data-largesrc="images/portfolio/9-twtc-400x400.jpg"
-         data-title="Trouble with the Curve"
-         data-description="Facebook App to promote the movie release of, 'Trouble with the Curve'.
-               The app created an electronic E-vite invitation allowing the user to generate a Facebook Share post containing a custom message and a movie promo image selected from a gallery, which could also be sent as an HTML email or .ICS calendar file link.">
-        <img src="images/portfolio/9-thumb250.jpg" alt="Facebook app image"/>
-        <div class="mask">
-          <h5>Facebook App</h5>
-          <p>Web Design</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  SM-2
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="#" data-largesrc="images/portfolio/7-portfolio-thumb.jpg"
-         data-title="SM-2 Missile Test SW"
-         data-description="Developed HW & SW electronics control & interface to automate the electro-optical testing for the Infrared sensor portion of the US Navy's Standard Missile Block II-B missile for RVS, Raytheon Missile Systems.  Led to a $5,000,000 annual sales contract.">
-        <img src="images/portfolio/7-thumb250.jpg" alt="SM-2 image"/>
-        <div class="mask">
-          <h5>Analysis Software</h5>
-          <p>Software / Engineering</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Boingo
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="#" data-largesrc="images/portfolio/2-portfolio-thumb.jpg"
-         data-title="Boingo Wireless"
-         data-description="Various airport site layouts, updates, & lots of Omniture (Test & Target) campaigns">
-        <img src="images/portfolio/2-thumb250.jpg" alt="Boingo Image"/>
-        <div class="mask">
-          <h5>Various site layouts</h5>
-          <p>Web Development</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Ouy My Window
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="#" data-largesrc="images/portfolio/4-omw-400x400.jpg"
-         data-title="Out My Window"
-         data-description="Smart TV Social Media <br>image sharing app for Warner Brothers">
-        <img src="images/portfolio/4-omw-250x250.jpg" alt="Out My Window image"/>
-        <div class="mask">
-          <h5>Smart TV app</h5>
-          <p>Web / Smart TV</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  Focal Plane Array Test
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="#" data-largesrc="images/portfolio/1-fpatest-400x400.jpg"
-         data-title="FPA Testing"
-         data-description="Designed the test characterization adn analysis software for an Infrared camera design lab.  'Crunches the numbers' for many standard calculations: NUC, Bad Pixels, NEI & NETD.  Supported TEC & LN2 cooled devices, InSb, InGaAs, MCT.">
-        <img src="images/portfolio/1-thumb250.jpg" alt="FPA Test image"/>
-        <div class="mask">
-          <h5>Camera Analysis Software</h5>
-          <p>Software / Engineering</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  SWIR IrInsight
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.teledyne-si.com/products-and-services/imaging-sensors/infrared-and-visible-fpas" data-largesrc="images/portfolio/12-ircat-400x400.jpg"
-         data-title="SWIR Infrared Cameras"
-         data-description="Designed the camera control software for a series of Infrared (IR) cameras.  Real-time 2pt NUC, Non-Uniformity pixel correction, embedded Xilinx FPGA, with custom USB control register, TEC cooled/stabilized. InGaAs (Indium Gallium Arsenide) focal plane arrays.">
-        <img src="images/portfolio/10-thumb250.jpg" alt="SWIR Infrared Cameras Image"/>
-        <div class="mask">
-          <h5>SWIR - Short Wave IR Camera Design
-            Thermo-Electric Cooled<br>
-            0.9&#956;m - 1.7&#956;m - Indigo ROIC
-          </h5><br>
-          <p>Software / Engineering</p>
-        </div>
-      </a>
-    </li>
-
-    <!--  MWIR
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li>
-      <a href="https://www.teledyne-si.com/products-and-services/imaging-sensors/hmir" data-largesrc="images/portfolio/11-portfolio-thumb.jpg"
-         data-title="Mid-Wave IR"
-         data-description="Test software characterization for PV-MCT, Mid-wave IR cameras 3 - 5um nominal.">
-        <img src="images/portfolio/11-thumb250.jpg" alt="img03"/>
-        <div class="mask">
-          <h5>(MWIR) Mid-Wave IR Camera<br>
-            LN2 Cooled PhotoVoltaic MCT
-          </h5>
-          <p>Software / Engineering</p>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="#" data-largesrc="images/portfolio/12-portfolio-thumb.jpg"
-         data-title="Mid-Wave IR Camera"
-         data-description="LN2 Cooled PhotoVoltaic MCT Imager">
-        <img src="images/portfolio/12-thumb250.jpg" alt="Mid-Wave IR Camera"/>
-        <div class="mask">
-          <h5>(MWIR) Mid-Wave IR Camera<br>
-            LN2 Cooled PhotoVoltaic MCT
-          </h5>
-          <p>Software / Engineering</p>
-        </div>
-      </a>
-    </li>
-  </ul>
-  <!--/Portfolio List
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-
-  <!-- Testimonials
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Testimonials  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <div id="testimonials">
     <div class="container clearfix">
       <div class="carousel_testimonials">
@@ -411,136 +339,42 @@
       </div>
     </div>
   </div>
-  <!--/Testimonials
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-</div>
-<!--/Portfolio-->
+<!-- About  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-
-<!-- About Us
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div id="aboutus">
-  <div class="container clearfix">
-    <h1 class="color mb">Robert (Bob!) Brennan</h1>
-    <p class="big-paragraph">
-      <strong>Development Lead / Senior Web Engineer</strong><br>
-      <span style="color: #ef4a4a;">JavaScript, Fullstack, Embedded</span>.</p><br>
-    <br>
-    <br>
-    <!--
-    <div class="one_half">
-      <h3 class="black mb">Interests:</h3>
-      <div class="meter">
-        <div style="width:100%">
-          <p class="white">Web Design, Software Development, JavaScript</p>
-        </div>
-      </div>
-    </div>
-    -->
-  </div>
-</div>
-<!--/About Us-->
-
-<!-- Separator3-->
 <div id="separator3">
   <div class="pattern"></div>
   <div class="separator3-bg"></div>
 </div>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-
-<!-- Resume
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div id="news"></div>
-
-
-<!-- Resume
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Resume  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <div id="resume" class="resume">
   <div class="container clearfix">
-    <div class="two_fourth clearfix">
-    <p><h2 class="color mb">Robert Brennan</h2></p>
-    <p>
-      <h3 class="black mb"><span style="color: #ef4a4a;">Download my resume</span></h3>
-    </p>
-
-      <p><a rel="nofollow" class="btn btn-default btn-lg full-width" href="./assets/2018-Brennan-Resume.pdf" onclick="">&nbsp;&nbsp; Download - PDF Version</a></p>
-      <p><a rel="nofollow" class="btn btn-default btn-lg full-width" href="./assets/2018-Brennan-Resume.docx" onclick="">&nbsp;&nbsp; Download - MS Word Version</a> <!--<a href="./assets/2014_Robert_Brennan_Resume_c.docx" download="Robert_Brennan_Resume.docx">MS Word Version - Resume</a>--></p>
-    </div>
-  </div>
-</div>
-</div>
-<!--/Resume -->
-
-<!-- Contact
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div id="contact">
-  <div class="contact-header">
-    <div class="container clearfix">
-      <!-- Contact Details-->
-      <div class="two_fourth">
-        <h3 class="black mb">Contact Details</h3>
-        <p>
-          <h4>Another sunny day at the beach!</h4>
-        </p>
-      </div>
-      <!--/Contact Details-->
-
-      <!-- Contact Santa Monica-->
-      <div class="one_fourth">
-        <h3 class="black mb">Santa Monica</h3>
-        <div class="mailbox">
-            <ul class="emaillink color color-special">
-              <li>
-                <a href="mailto:1bobbrennan@gmail.com?subject='Message from BobBrennan.com'">
-                  <span class="mail"><h4>1bobbrennan@gmail.com</h4></span>
-                </a>
-              </li>
-            </ul>
-
-
-        <!-- <h4><span class="color special-color">1bobbrennan@gmail.com</span></h4> -->
-        <!-- <a href="mailto:1bobbrennan@gmail.com?subject='Message from BobBrennan.com'" class="send_message btn btn-default">Send Email</a> -->
+    <div class="three_fourth clearfix">
+      <h1 class="color mb">Bob Brennan</h1>
+      <p class="big-paragraph">
+        <strong>Development Lead | Web Engineer | Electronics</strong>
         <br>
-      </div>
-    </div>
-  </div>
-  <!-- Contact Header
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-  <!-- Map
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- <div id="map_canvas"></div> -->
-  <!-- /Map -->
-
-
-  <!-- Contact Form
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--
-  <div class="contact-form">
-    <div class="container clearfix">
-      <h2 class="black mb">Send me a message</h2>
-      <div id="message"></div>
-      <form method="post" action="contact.php" name="contactform" id="contactform">
-        <div class="one_half">
-          <input name="name" type="text" id="name" size="30"  onfocus="if(this.value == 'Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name'; }" placeholder="What's in a name?">
-          <input name="email" type="text" id="email" size="30" onfocus="if(this.value == 'E-mail') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail'; }" placeholder="email">
-          <input name="phone" type="text" id="phone" size="30" onfocus="if(this.value == 'Phone') { this.value = ''; }" onblur="if(this.value == '') { this.value = '1-310-555-1212'; }" placeholder="Phone" >
-        </div>
-        <div class="one_half last">
-          <textarea name="comments" cols="40" rows="3" id="comments" onfocus="if(this.value == 'Message') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Message'; }" >Message</textarea>
-        </div>
-        <input type="submit" class="send_message" id="submit" value="Submit" />
-      </form>
+        <span style="color: #ef4a4a;">JavaScript, Fullstack, Embedded</span>.
+      </p>
+      <p>
+        <a rel="nofollow" class="btn btn-default btn-lg"
+          href="./assets/2018-Brennan-Resume.pdf"
+          download="2018-Brennan-Resume.pdf
+          onclick="">&nbsp;&nbsp;PDF Version
+        </a>
+      </p>
+      <p>
+        <a rel="nofollow" class="btn btn-default btn-lg"
+          href="./assets/2018-Brennan-Resume.docx"
+          download="2018-Brennan-Resume.docx"
+          onclick="">&nbsp;&nbsp;MS Word Version</a>
+      </p>
     </div>
   </div>
 </div>
--->
-<!--/Contact Form -->
 
-<!-- Footer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="footer">
+<!-- Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div id="links" class="footer">
   <div class="container clearfix">
     <ul class="contactus">
       <li>
@@ -550,7 +384,6 @@
       </li>
     </ul>
     <div class="footer-social"><a href="https://twitter.com/1BobBrennan/" target="_blank"><img src="images/footer_twitter.png" alt=""></a></div>
-    <div class="footer-social"><a href="https://plus.google.com/u/0/116705929549785055221/" target="_blank"><img src="images/footer_google.png" alt=""></a></div>
     <div class="footer-social"><a href="https://www.linkedin.com/in/robertbrennan2314/" target="_blank"><img
         src="images/footer_linkedin.png" alt=""></a></div>
     <div class="footer-social"><a href="https://github.com/bob2314/" target="_blank"><img
