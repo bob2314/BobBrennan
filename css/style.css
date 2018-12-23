@@ -1168,7 +1168,8 @@
 	}
 	.footer ul.contactus li span.mail {
 		padding-left: 50px;
-		position: relative;
+    position: relative;
+    padding-top: 4px;
 	}
 	.footer ul.contactus li span.phone:after {
 		background: url("../images/phone.png") no-repeat transparent;
