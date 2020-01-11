@@ -9,7 +9,8 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+  /* margin: 10px 5px 0 5px; */
+  padding: 10px 5px 0 5px;
 	vertical-align: top;
 	height: 250px;
 	/*height: 342px;*/
@@ -114,7 +115,7 @@
 
 .og-details h3 {
 	font-weight: 300;
-	font-size: 52px;
+	font-size: 38px;
 	padding: 10px 0 10px;
   margin-bottom: 10px;
   line-break: normal;

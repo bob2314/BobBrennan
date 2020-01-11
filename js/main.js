@@ -184,29 +184,6 @@ function initialize() {
         '<p>Another sunny day at the beach!</p>' +
         '</div>' +
         '</div>';
-    // var infowindow = new google.maps.InfoWindow({
-    //     content: contentString
-    // });
-
-    // var companyImage = new google.maps.MarkerImage('images/marker.png',
-    //     new google.maps.Size(58, 63), //<!-- Width and height of the marker -->
-    //     new google.maps.Point(0, 0),
-    //     new google.maps.Point(35, 20) //<!-- Position of the marker -->
-    // );
-
-    // var companyPos = new google.maps.LatLng(34.0116634, -118.492752);
-
-    // var companyMarker = new google.maps.Marker({
-    //     position: companyPos,
-    //     map: map,
-    //     icon: companyImage,
-    //     title: "Brennan",
-    //     zIndex: 3
-    // });
-
-    // google.maps.event.addListener(companyMarker, 'click', function() {
-    //     infowindow.open(map, companyMarker);
-    // });
 }
 
 /*===========================================================*/
@@ -237,14 +214,11 @@ function calculateScroll() {
                 .removeClass('current')
                 .eq(i).addClass('current');
         }
-
     })
 }
 
 $(document).ready(function() {
-
     calculateScroll();
-
     $(window).scroll(function(event) {
         calculateScroll();
     });
@@ -257,30 +231,6 @@ $(document).ready(function() {
 /*	Carousel
 /*===========================================================*/
 $(function() {
-    //	Scrolled by user interaction
-    //$('#news-carousel').carouFredSel({
-    //    auto: false,
-    //    width: '100%',
-    //    prev: {
-    //        button: "#prev2",
-    //        key: "left",
-    //        items: 1,
-    //        duration: 750
-    //    },
-    //    next: {
-    //        button: "#next2",
-    //        key: "right",
-    //        items: 1,
-    //        duration: 750
-    //    },
-    //    mousewheel: false,
-    //    swipe: {
-    //        onMouse: false,
-    //        onTouch: true
-    //    }
-    //});
-
-
     $('#testimonials-carousel').carouFredSel({
         auto: true,
         prev: {
@@ -295,7 +245,6 @@ $(function() {
             items: 1,
             duration: 750
         },
-
         mousewheel: false,
         swipe: {
             onMouse: false,
