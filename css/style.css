@@ -149,6 +149,9 @@
 		margin-right: 4%;
 		position: relative;
 	}
+	.center-it {
+		text-align:center;
+	}
 	.last {
 		margin-right:0px!important;
 	}
@@ -1138,8 +1141,8 @@
 		width:50px;
 		height:50px;
 		background-color:#363942;
-		margin-right:30px;
-		float:left;
+		margin:20px;
+		display: inline-block;
 		border-radius:50px;
 		bottom:20px;
 	}
@@ -1207,15 +1210,15 @@
 		position: relative;
 	}
 	.copyright {
-		margin-top:35px;
-		padding-top:35px;
-		width:100%;
+		margin-top: 15px;
+    padding-top: 10px;
 		border-top: 1px solid #363942;
-		float:left;
+		display: block;
 	}
 	.copyright p{
 		color:#fff;
 		opacity:0.3;
+		float: right;
 	}
 /* ------------------------------------------------------------------------------- */
 /*  Buttons
@@ -1382,15 +1385,12 @@ border-color: #ccc;
 .resume .btn {
 	margin-top: 22px;
 	font-size: 22px;
-	padding: 10px 10px;
 	color: #ef4a4a;
 	border-color: #ef4a4a;
 	background-color: transparent;
   text-shadow: 0 1px 0 rgba(0,0,0,0.15);
-  width: 128px;
-  /* width: 80%; */
-  max-width: 80%;
-  margin-right: 5%;
+  width: 92%;
+  max-width: 92%;
 }
 .resume .btn:hover {
 	background-color: #f4faf8;
