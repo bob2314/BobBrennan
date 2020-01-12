@@ -1769,8 +1769,8 @@ border-color: #ccc;
 		top: 3px;
 	}
 	.footer-social {
-		margin-bottom: 30px;
-		margin-right: 30px;
+		/* margin-bottom: 30px; */
+		/* margin-right: 30px; */
 	}
 	.carousel_testimonials li h1 {
 		font-size:35px;
@@ -2008,8 +2008,8 @@ border-color: #ccc;
 		top: 3px;
 	}
 	.footer-social {
-		margin-bottom: 30px;
-		margin-right: 30px;
+		/* margin-bottom: 30px; */
+		/* margin-right: 30px; */
 	}
 	.carousel_testimonials li h1 {
 		font-size:35px;
